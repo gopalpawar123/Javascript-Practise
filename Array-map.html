@@ -1,0 +1,43 @@
+<script>
+    var arr=[1,4,7,9];
+    // [1,16,49,81];
+    var arr1=[];
+    for( val of arr){
+        console.log(val, val**2);
+        arr1.push(val**2)
+    }
+    console.log(arr1);
+
+
+
+    var arr=[12,45,22,10,17,78];
+    // [45,22,78]
+
+    var arr1=[];
+    for(val of arr){
+        if(val>=18){
+            arr1.push(val);
+        }
+    }
+    console.log(arr1);
+</script>
+
+<script>
+    console.log("============MAP===========");
+    // map()--(function)-----transform array values
+    var arr=[1,4,7,9];
+    arr.map((val)=>{
+        console.log(val*val);
+    })
+    // arr.map((val)=>{val**2})
+   var ans= arr.map(val=>val**2)
+   console.log(ans);
+    console.log("============MAP===========");
+    console.log("============Filter===========");
+    var arr=[12,45,22,10,17,78];
+    var ans= arr.filter(val=>val>=18);
+    console.log(ans); 
+("============Filter===========");
+
+
+</script>

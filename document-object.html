@@ -1,0 +1,49 @@
+<html>
+   <style>
+        #para{
+         border: solid;
+          }
+          #heading{
+
+        background-color: brown;
+          }
+  </style>
+          <head></head>
+       <body>
+             <p id="para">test</p>  
+             <h1 id="heading">hello</h1>
+              <button onclick="myfunc()">enter</button>
+
+               <script>
+
+                  function myfunc(){
+
+                  // console.log('test');
+                   console.log(typeof document);
+                    console.log(document);
+                    var pTag= document. getElementById('para');
+                      console.log(pTag,typeof pTag)
+                     pTag.style.border='solid green'
+                       pTag.style.fontSize="40px"
+                    pTag.style.textAlign="center"
+                    pTag.style.textTransform="upperCase"
+                      // innerHtml/ inner text
+
+                    pTag.innerText=`hello, <i>TEST</i>`
+
+                    pTag.innerHTML=`hello, <i>TEST</i>`
+
+                   var gTag= document. getElementById('heading');
+                      console.log(gTag,typeof gTag)
+                          gTag.style.backgroundColor='yellow'
+                      gTag.style.fontSize="40px"
+                     gTag.style.textAlign="center"
+                   gTag.style.textTransform="upperCase"
+                    }
+
+
+
+                </script>
+
+            </body>
+</html>

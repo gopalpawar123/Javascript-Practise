@@ -1,0 +1,36 @@
+<script>
+
+var productsize =['xl','xxl','m','l','s',10,3,4,9]
+
+// for of loop (aplicable only for arrays)
+// for in loop (aplicable  for arrays and objects)
+
+// document.write(`<li> ${productsize[0]}</li>`)
+// document.write(`<li> ${productsize[1]}</li>`)
+// document.write(`<li> ${productsize[2]}</li>`)
+// document.write(`<li> ${productsize[3]}</li>`)
+
+// for(output -- values of input--array){}
+// output is only values
+for(var result of productsize){
+
+    document.write(`<li><input type ='checkbox'>${result}</li>`);
+}
+// for(output --index in input--array){}
+// output is values as well index number
+
+for(var i in productsize){
+if(i<6)
+    document.write(`<li>${i}, ${productsize[i]}</li>`)
+}
+var user ={
+    name:'gopal',age:'24',place:'latur',work:'developer'
+}
+
+for(var i in user){
+
+    document.write(`<li>key: ${i}, value: ${user[i]}</li>`)
+}
+
+
+</script>

@@ -1,0 +1,31 @@
+<input type="text" id="txt">
+<button>Add</button>
+
+<ul style="border: solid;">
+    <!-- <li>mumbai</li>
+    <li>pune</li>
+    <li>latur</li> -->
+</ul>
+
+<script>
+    // Event handler and dom manupulations
+
+    document.querySelector('button').onclick= function(){
+        // console.log('Event Attached for button');
+        var record= document.querySelector('#txt').value;
+        // console.log(record);
+
+        var litag= document.createElement('li');
+        console.log(litag);
+        console.log(typeof litag);
+
+        litag.innerHTML=record;
+        console.log(litag);
+
+        var ultag= document.querySelector('ul');
+        console.log(ultag, typeof ultag);
+
+        // litag( child object) move to ultag(parent object)
+        ultag.appendChild(litag);
+    }
+</script>

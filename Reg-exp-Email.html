@@ -1,0 +1,75 @@
+
+<script>
+    /*
+    //---delimeter
+    /^/---for the first chr
+    /$/---for the last chr
+    /^[]{}$/---range chr
+    /^[]{5}$/---exact five chr
+    /^[]{4,10}$/----min four chr, max ten chr
+    /^[]{4,}$/--atleast four chr
+    /^[]{1,}$/--atleast one chr
+    /^[]+$/---[]+ atleast one chr..
+    */
+/*
+1,2,3,4,5,6,7,8,9,10,11,12
+01/02/03.......09
+months
+*/
+var reg_exp_month=/^([0]?[1-9]|[1][0-2])$/;
+var userMonth=90;
+var result=reg_exp_month.test(userMonth);
+console.log(result);
+/*
+1-9 | 01 02 03 04-----09
+10-19
+20-29
+30-31
+*/
+
+var reg_exp_date=/^([0]?[1-9]|[1][0-9]|[2][0-9]|[3][0-1])$/
+var userdate=23;
+var result=reg_exp_date.test(userdate);
+console.log(result);
+
+
+/*
+om@gmail.com
+om.patil@gmail.com
+(123_om.patil)@(gmail.com)
+(username)@(domainname)
+*/
+// username in EMail address.
+/*
+om
+omkar
+om.patil
+123_om.patil
+*/
+var reg_username=/^([a-zA_Z0-9]([a-zA_Z0-9_\.]+)?[a-zA_Z0-9])$/;
+  var username='om' ;
+  var result=reg_username.test(username);
+  console.log('USERNAME',result);
+
+
+  // Domain NAME
+  /*
+  gmail.com
+  gmail.co.in
+  99acres.com
+  in.com
+  ask-to-resolve.com
+  (gmail).(co)(.in)?
+  (gmail).([a-zA-Z]{2,})(.in)?
+  (gmail).([a-zA-Z]{2,})(.[a-zA-Z]{2,})?
+  ([a-zA-Z0-9]([a-zA-z0-9-]+)?[a-zA-Z0-9])
+  /^(gmail).(co)(.in)$/
+  - range
+  \- normal char
+  */
+ var reg_domain=/^([a-zA-Z0-9]([a-zA-z0-9\-]+)?[a-zA-Z0-9])\.([a-zA-Z]{2,})(\.[a-zA-Z]{2,})?$/;
+ var domain_value='in.com' ;
+  var result=reg_domain.test(domain_value);
+  console.log('DOMAIN NAME',result);
+</script>
+

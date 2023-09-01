@@ -1,0 +1,37 @@
+
+<input type="text" class="txt" placeholder=""/>
+<button>Validate</button>
+
+<script>
+    document.querySelector('button').onclick=function(){
+      var result=  document.querySelector('.txt').value;
+      console.log(result);
+    
+   /*
+   MIN 2 char--om
+   MAX char --not countable
+   (a-z,A-Z)
+   numbers and special character is not allowed
+   ()---group
+   ()?---optional group
+   []+--- min or atleast 1char
+   */
+
+  //  var reg_username=/^[a-zA-Z]([a-zA-z ]+)?[a-zA-z]$/
+  var reg_username=/^[a-zA-Z]([a-zA-z ]{1,})?[a-zA-z]$/
+
+   var ans=reg_username.test(result);
+   console.log(ans);
+   document.querySelector('.txt').style.textTransform='capitalize';
+
+   if(ans){
+    // split is function is js to convert string into arrr.
+
+    // var record=result.split("");
+    // console.log(record);
+    // console.log(record[0]);
+    // console.log(record[0][0].toUpperCase());
+   }
+
+    }
+</script>

@@ -1,0 +1,40 @@
+<div>
+
+    <head></head>
+    <style>
+        #para {
+            background-color: green;
+        }
+
+        #heading {
+            border: solid;
+        }
+    </style>
+
+    <body>
+        <h1 id="heading">gopal</h1>
+        <p id="para">hi gopal</p>
+        <button onclick="myfunc()">enter</button>
+    </body>
+    <script>
+        function myfunc() {
+            console.log(typeof document);
+            console.log(document);
+            console.log('test');
+
+            var ptag = document.getElementById('para')
+            console.log(ptag, typeof ptag);
+            ptag.style.border = "solid red"
+            ptag.style.fontSize = '40px'
+            ptag.style.textAlign = 'center'
+            ptag.style.textTransform = 'uppercase'
+
+            // innerhtml, innertext
+            ptag.innerText = 'hello,<i>test</i>'
+            // innertext is used to display content as it is
+            ptag.innerHTML = 'hello,<i>test</i>'
+            // innerhtml is used to manupulate the content
+        }
+    </script>
+
+</div>

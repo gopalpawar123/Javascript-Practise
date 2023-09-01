@@ -1,0 +1,16 @@
+<script>
+      function myfunc(){
+        console.log('named function',1000);
+    }
+    var myfunc=function(){
+        console.log('ANONYMOUS',2000);
+    }
+// anonymous or fat arrow  function has high prority over named function.
+// and last function is executed (if both anonymous and fat arrow fun is used)
+// => FAT ARROW FUNCTION.
+    var myfunc=()=>{
+        console.log('FAT ARROW',3000);
+    }
+  
+    myfunc();
+</script>

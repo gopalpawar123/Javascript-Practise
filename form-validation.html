@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      ul {
+        list-style: none;
+        font-size: 20px;
+      }
+      ul li {
+        padding: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-1 text-center">form Validation</h1>
+      <ul>
+        <li><span class="text-danger">*</span> Enter Name</li>
+        <li>
+          <input type="text" id="uname" class="form-control" />
+          <span class="text-danger" style="display: none">Invalid Name</span>
+        </li>
+
+        <li>Enter Mobile</li>
+        <li>
+          <input type="text" id="umobile" class="form-control" />
+          <span class="text-danger" style="display: none">Invalid Mobile</span>
+        </li>
+        <li>Enter Email</li>
+        <li>
+          <input type="text" id="uemail" class="form-control" />
+          <span class="text-danger" style="display: none">Invalid Email</span>
+
+        </li>
+        <li>Enter Password</li>
+        <li>
+          <input type="password" id="upass" class="form-control" />
+          <span class="text-danger" style="display: none">Invalid Password</span>
+
+        </li>
+        <li>Enter Confirm Password</li>
+        <li>
+          <input type="password" id="ucpass" class="form-control" />
+          <span class="text-danger" style="display: none">Invalid Confirm Password</span>
+
+        </li>
+        <li>Enter Captcha: <span id="message"></span> 
+            <!-- <button onclick="captcha()">R</button> -->
+        </li>
+        <li>
+            <input type="text" id="ucap" class="form-control" />
+            <span class="text-danger" style="display: none">Invalid Captcha</span>
+  
+          </li>
+
+        <li>
+          <button id="btn" class="btn btn-dark">Validate</button>
+        </li>
+        <li>* fields are compulsory</li>
+      </ul>
+    </div>
+
+    <script src="validation.js"></script>
+  </body>
+</html>

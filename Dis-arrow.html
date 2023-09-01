@@ -1,0 +1,30 @@
+<p onmouseover="myfunc1(this)" id="p1">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At expedita reprehenderit, odit porro ipsum enim alias nisi. Aperiam excepturi perspiciatis nesciunt fuga harum placeat quo a nisi, ut necessitatibus qui!
+</p>
+<p onmouseover="myfunc2(this)" id="p2">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At expedita reprehenderit, odit porro ipsum enim alias nisi. Aperiam excepturi perspiciatis nesciunt fuga harum placeat quo a nisi, ut necessitatibus qui!
+</p>
+
+<script>
+    var myfunc1=function(curEle){
+        console.log(curEle);
+        curEle.style.background='gray';
+    }
+    var myfunc2=(curEle)=>{
+        console.log(curEle);
+        curEle.style.background='gray';
+    }
+
+    document.querySelector('#p1').onmouseout=function(){
+        console.log(this,'mouseout');
+        this.style.background='lightgray';
+    }
+    // this stands for current para in anonymous
+    // this stands for current window in arrow.
+    // this keyword in anonymous function select current element.
+    // this is in arrow function acts as window object.
+    document.querySelector('#p1').onmouseout=()=>{
+        console.log(this,'mouseout');
+        this.style.background='lightgray';
+    }
+</script>

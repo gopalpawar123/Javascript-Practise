@@ -1,0 +1,54 @@
+<button>Enter</button>
+
+<ul style="border: solid;">
+
+</ul>
+
+<script>
+    document.querySelector('button').onclick=function(){
+        var litag=document.createElement('li');
+        console.log(litag, typeof litag);
+        var ultag=document.querySelector('ul');
+        console.log(ultag,typeof ultag);
+
+        litag.innerHTML=Math.random();
+        // ultag.innerHTML=litag;
+        // cannot be used to apend one obj to other obj.
+        ultag.appendChild(litag);
+        // used to append child obj to parent obj.
+    }
+</script>
+
+
+<!-- 
+    DOM SELECTORS METHODS
+    ---------------
+    1. getelementById()
+    2. getelementByClassname()
+    3.getelementByName()
+    4.queryselector()
+    5.queryselectorAll()
+ -->
+
+ <!-- 
+    DOM PROPERTIES
+    --------------
+    innerHTML
+    innerText
+    style
+    Classname
+    id
+  -->
+
+  <!-- 
+    DOM METHODS
+    -----------
+    setattribute()
+    getattribute()
+   -->
+
+   <!-- 
+    DOM Event Handler
+    DOM Event Listener
+    DOM Manupulation
+    -->

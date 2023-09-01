@@ -1,0 +1,17 @@
+<script>
+    var productsize=['xl','x','m','r',2,3,5,7]
+    // document.write(`<li> ${productsize[0]}</li>`)
+    // document.write(`<li> ${productsize[1]}</li>`)
+    // document.write(`<li> ${productsize[2]}</li>`)
+    // document.write(`<li> ${productsize[3]}</li>`)
+    // document.write(`<li> ${productsize[4]}</li>`)
+    // document.write(`<li> ${productsize[5]}</li>`)
+    // document.write(`<li> ${productsize[6]}</li>`)
+
+for( var result of productsize){
+document.write(`<li> <input type='checkbox'> ${result}</li>`)
+}
+for(var i in productsize){
+    document.write(`<li>${i},${productsize[i]}</li>`)
+}
+</script>

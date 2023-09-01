@@ -1,0 +1,29 @@
+ <!-- Form validation using  regular expression -->
+
+ <input type="text" class="txt" placeholder=""/>
+ <button>Validate</button>
+
+ <script>
+    document.querySelector('button').onclick=function(){
+        var result= document.getElementsByClassName('txt');
+        // console.log(result);
+        // console.log(result[0].value);
+
+        // 8pN--- 0 t0 9, a to z, A TO Z --exact three character
+        /*
+        //delimeter or boundary(we have to write regular expresion in delimeter or in boundary)
+        <h1></h1>
+       <style></style>
+       [=1 character]
+        [0-9][a-z][A-Z]
+        ^[0-9]-- first character
+        [A-Z]$---last character
+        */
+// test is function to compare regular exp and values from textbox
+        var pattern= /^[0-9][a-z][A-Z]$/
+        var ans=pattern.test(result[0].value);
+        console.log(ans);
+
+
+    }
+ </script>

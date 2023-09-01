@@ -1,0 +1,21 @@
+<!-- timer api , Date class with callback -->
+<p></p>
+<script>
+    var rec= new Date();
+// date class object(rec).
+    console.log(typeof rec);
+    console.log(rec);
+    console.log(rec.getDate());
+    console.log(rec.getMonth());
+    console.log(rec.getFullYear());
+    console.log(rec.toLocaleString());
+    console.log(rec.toLocaleDateString());
+    console.log(rec.toLocaleTimeString());
+
+    setInterval(function(){
+    var rec= new Date();
+        document.querySelector('p').innerHTML=rec.toLocaleString();
+
+    },1000)
+
+</script>

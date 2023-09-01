@@ -1,0 +1,16 @@
+
+<input type="text" class="txt" placeholder=""/>
+<button>Validate</button>
+
+<script>
+    document.querySelector('button').onclick=function(){
+      var result=  document.querySelector('.txt').value;
+      console.log(result);
+    
+    //   10 digits--- 1st number non zero
+    var pattern_mobile=/^[1-9][0-9]{9}$/
+    var ans=pattern_mobile.test(result);
+    console.log(ans);
+
+    }
+</script>

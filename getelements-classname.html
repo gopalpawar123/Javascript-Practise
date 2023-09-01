@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+
+<body>
+    <h1 id="t">heading</h1>
+    <h1 id="t">heading</h1>
+    <p><button onclick="myfunc()">enter</button></p>
+    <style>
+        .p1{background-color: yellow;
+    
+        }
+        .p2{
+            text-transform: uppercase;
+        }
+    </style>
+<script>
+    function myfunc(){
+        console.log('test');
+        console.log(document);
+        console.log(document.getElementById('t'));
+        var tag = (document.getElementById('t'))
+        console.log(tag);
+        tag.style.border ='solid'
+        tag.style.fontSize='40px'
+        // tag.style.backgroundColor='red'
+        // tag.style.textTransform='uppercase'
+        tag.innerText='heading tool <u>gopal</>'
+         tag.innerHTML='heading tool <u>gopal</>'
+            tag.className='p1 p2'
+    }
+</script>
+
+</body>
+</html>
